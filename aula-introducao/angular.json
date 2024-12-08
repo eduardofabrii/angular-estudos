@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aprendendo-modulos": {
+    "primeiro-projeto": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aprendendo-modulos",
+            "outputPath": "dist/primeiro-projeto",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "aprendendo-modulos:build:production"
+              "buildTarget": "primeiro-projeto:build:production"
             },
             "development": {
-              "buildTarget": "aprendendo-modulos:build:development"
+              "buildTarget": "primeiro-projeto:build:development"
             }
           },
           "defaultConfiguration": "development"
