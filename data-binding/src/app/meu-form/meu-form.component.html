@@ -1,0 +1,30 @@
+<section class="two-way-binding">
+  <article>
+    <h3>Two-Way Data Binding</h3>
+    <div>
+
+      <p>Input com Event Binding</p>
+      <input type="text"
+      [value]="nome"
+      (input)="nome = inputNome.value"
+      #inputNome>
+
+      <br><br><br>
+
+      <p>Input com Two-Way Data Binding</p>
+      <input type="text"
+      [(ngModel)]="nome">
+
+      <br><br><br>
+      <p>Input com objetos usando Two-Way</p>
+      <span>Nome:</span>
+      <input type="text" [(ngModel)]="pessoa.nome"><br>
+      <span>Idade:</span>
+      <input type="text" [(ngModel)]="pessoa.idade">
+
+      <br><br><br>
+      <p>Sobre os Inputs: Você digitou o nome: {{ nome }}</p>
+      <p #object [style.display]="" >Sobre o Objeto: Você é o {{ pessoa.nome }} e tem {{ pessoa.idade }} anos.</p>
+    </div>
+  </article>
+</section>
