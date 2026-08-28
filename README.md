@@ -1,2 +1,8 @@
-# angular-estudos
- Estudando Angular para o Front-End
+# Angular - Estudos
+
+Estudos de Angular para desenvolvimento front-end.
+
+## Tecnologias
+
+- Angular
+- TypeScript
